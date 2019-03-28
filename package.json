@@ -1,0 +1,27 @@
+{
+  "name": "invoker-ssr",
+  "version": "0.0.1",
+  "description": "starter-kit for react.js ssr project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "reactjs",
+    "ssr",
+    "next",
+    "react",
+    "javascript"
+  ],
+  "author": "ongki herlambang",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^8.0.3",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
