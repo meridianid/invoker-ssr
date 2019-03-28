@@ -1200,7 +1200,7 @@ babel-plugin-transform-react-remove-prop-types@0.4.15:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.15.tgz#7ba830e77276a0e788cd58ea527b5f70396e12a7"
   integrity sha512-bFxxYdkZBwTjTgtZEPTLqu9g8Ajz8x8uEP/O1iVuaZIz2RuxJ2gtx0EXDJRonC++KGsgsW/4Hqvk4KViEtE2nw==
 
-babel-runtime@^6.26.0:
+babel-runtime@6.x.x, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -1537,6 +1537,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
 cliui@^3.2.0:
   version "3.2.0"
@@ -2735,6 +2740,21 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
   integrity sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
+
+invoker-base@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/invoker-base/-/invoker-base-1.0.6.tgz#967e8866186c09544e6dca882f93676e3ce97e42"
+  integrity sha512-9EE/LPii5xRX+rHB9JFFwpQTeoT8f9IufOXNq08gXJ9Pu18nOwRfvaK9cLh+WFcm7hCg03uX6w+irUOpKuQsmw==
+
+invoker-layout@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/invoker-layout/-/invoker-layout-1.0.1.tgz#a89a62a6d514904bf2b9ac9194fa15e5cbbc3518"
+  integrity sha512-rxNyo/y82DpPM2+0RNVlFVQQ3MiJFg44o+Zyc+j5yLp+M0wd+u8xGIscv0+P6KLWzJwgn6fdwaiaLIZJ86J+Fw==
+
+invoker-tokens@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/invoker-tokens/-/invoker-tokens-1.0.13.tgz#4679f220d759e13d65883781ab9f67ed3e1421cc"
+  integrity sha512-VeyTJAe8UOES+KyKOw+vrSPpcBjsffhvaPTLmlCEuzM8nPS/Kldi0kf2f8Xu4Xy3TbgTlIwdH8S9NSafJPRzRw==
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -4314,6 +4334,13 @@ react-is@^16.3.2, react-is@^16.8.1:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+
+react-no-ssr@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-no-ssr/-/react-no-ssr-1.1.0.tgz#313b48d2e26020f969ed98e472f10481604e3cc8"
+  integrity sha1-MTtI0uJgIPlp7ZjkcvEEgWBOPMg=
+  dependencies:
+    babel-runtime "6.x.x"
 
 react@^16.8.6:
   version "16.8.6"
