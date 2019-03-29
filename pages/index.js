@@ -5,6 +5,7 @@ import cx from 'classnames'
 
 import Brand from './../components/Brand/Brand'
 import Text from '../components/Text/Text';
+import Logo from '../components/Logo/Logo';
 
 const Home = () => {
 
@@ -22,23 +23,25 @@ const Home = () => {
     "Betty",
   ]
 
-  let [title, setTitle] = React.useState(names[ Math.floor(Math.random() * Math.floor(names.length - 1)) ]);
+  let initialName = names[ Math.floor(Math.random() * Math.floor(names.length - 1)) ];
+  let [title, setTitle] = React.useState(initialName);
 
   const randomName = () => {
     setTitle( names[ Math.floor(Math.random() * Math.floor(names.length - 1)) ] )
   };
 
   return (
-    <div>
-      <Brand />
+    <div className={cx(styles.root)}>
+      <span style={{fontSize: '96px'}}>🔥</span>
       <Text display3 component="h1" className={cx(styles.title)}>
         hi, there {title}
       </Text>
-      <button onClick={randomName}>Random cat</button>
+      <button className={cx(styles.button)} onClick={randomName}>Random cat</button>
       <NoSSR>
-        <h2 className={cx(styles.subtitle)}>
-          The title should be red
-        </h2>
+        <Text heading3 component="h2" style={{marginBottom: '24px'}}>
+          View the page-source to see the action  👀
+        </Text>
+        <Logo style={{ width: '120px' }} />
       </NoSSR>
     </div>
   )

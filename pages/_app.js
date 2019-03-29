@@ -1,8 +1,8 @@
 import React from 'react'
 import App, { Container } from 'next/app'
 
-import './index.scss'
-import '~invoker-layout/grid.module.scss'
+import './../static/sass/index.scss'
+import 'invoker-layout/grid.module.scss'
 import './../static/fonts/fonts.js'
 
 class CustomApp extends App {

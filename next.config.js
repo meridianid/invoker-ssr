@@ -7,7 +7,7 @@ module.exports = compose([
   [withFonts, {
     enableSvg: true,
   }],
-  [withCSS],
+  [withCSS, {}],
   [withSass, {
     cssModules: true,
     cssLoaderOptions: {
