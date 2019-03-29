@@ -1,9 +1,29 @@
 @import '~invoker-tokens/index.scss';
+@import '~invoker-base/index.scss';
 
-.root {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 
+  // Enable for debugging
+  // outline: 1px solid red;
 }
 
-.title {
-  color: red;
+body {
+  position: relative;
+  color: $dark-alpha-70;
+}
+
+:global {
+  .Hide {
+    display: none;
+  }
+
+  .topLayer {
+    z-index: 99999999;
+  }
 }

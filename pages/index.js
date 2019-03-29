@@ -3,6 +3,9 @@ import React from 'react'
 import NoSSR from 'react-no-ssr'
 import cx from 'classnames'
 
+import Brand from './../components/Brand/Brand'
+import Text from '../components/Text/Text';
+
 const Home = () => {
 
   let names = [
@@ -23,16 +26,17 @@ const Home = () => {
 
   const randomName = () => {
     setTitle( names[ Math.floor(Math.random() * Math.floor(names.length - 1)) ] )
-  }
+  };
 
   return (
     <div>
-      <h1 className={styles.title}>
-        hi, there { title }
-      </h1>
+      <Brand />
+      <Text display3 component="h1" className={cx(styles.title)}>
+        hi, there {title}
+      </Text>
       <button onClick={randomName}>Random cat</button>
       <NoSSR>
-        <h2>
+        <h2 className={cx(styles.subtitle)}>
           The title should be red
         </h2>
       </NoSSR>
