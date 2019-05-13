@@ -18,7 +18,7 @@ module.exports = compose([
   {
     webpack: (config) => {
       config.module.rules.push({
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: {
           loader: 'url-loader',
           options: {
