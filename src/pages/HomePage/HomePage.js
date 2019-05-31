@@ -41,7 +41,6 @@ const Homepage = () => {
         <Text heading3 component="h2" style={{marginBottom: '24px'}}>
           View the page-source to see the action  👀
         </Text>
-        <Logo style={{ width: '120px' }} />
       </NoSSR>
     </div>
   )
