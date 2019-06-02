@@ -2,14 +2,17 @@
 
 An opiniated starter for next.js project
 
-1. Overview
-2. Getting Started
-3. What's included?
-4. Issues and Contribution
+****- [Invoker Next](#invoker-next)
+  - [Overview](#overview)
+  - [Getting Stated](#getting-stated)
+  - [What's Included](#whats-included)
+  - [Issues and Contribution](#issues-and-contribution)
 
 ## Overview
 
 invoker-next is an opiniated starter-kit for a next.js project at [Meridian.id](http://meridian.id)
+
+---
 
 ## Getting Stated
 
@@ -22,8 +25,10 @@ Before you can start tinkering with your project, you need to have these install
 If you already have all those three on your machine, you can scaffold your project by running this command on your terminal
 
 ```shell
-tinker next <your-project-name>
+tinker next your-project-name
 ```
+
+---
 
 ## What's Included
 
@@ -33,6 +38,8 @@ As an opiniated as it is, we already included a bunch of plugins and tools so yo
   The peanut and butter of styling your project. You can still use the old paradigm on building your styles and have a dedicated style files but with more power and controll (i.e. scopped styles, mixins, nesting, variables, etc.)
 * Inline SVG with `babel-plugin-inline-react-svg`
   Help you import SVG files and inline it in your react component. This way you can have more controll over your SVG files (i.e. Animate the color by using the `fill="currentColor` properties, etc.")
+
+---
 
 ## Issues and Contribution
 
