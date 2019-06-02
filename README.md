@@ -34,10 +34,8 @@ tinker next your-project-name
 
 As an opiniated as it is, we already included a bunch of plugins and tools so you can develop your project faster in a fun way. Here's a complete list of them, and you can disable it in the `next-config.js` file.
 
-* Styling with Sass(SCSS) and CSS-Modules
-  The peanut and butter of styling your project. You can still use the old paradigm on building your styles and have a dedicated style files but with more power and controll (i.e. scopped styles, mixins, nesting, variables, etc.)
-* Inline SVG with `babel-plugin-inline-react-svg`
-  Help you import SVG files and inline it in your react component. This way you can have more controll over your SVG files (i.e. Animate the color by using the `fill="currentColor` properties, etc.")
+* **Styling with Sass(SCSS) and CSS-Modules**. The peanut and butter of styling your project. You can still use the old paradigm on building your styles and have a dedicated style files but with more power and controll (i.e. scopped styles, mixins, nesting, variables, etc.)
+* **Inline SVG with `babel-plugin-inline-react-svg`**. Help you import SVG files and inline it in your react component. This way you can have more controll over your SVG files (i.e. Animate the color by using the `fill="currentColor` properties, etc.")
 
 ---
 
