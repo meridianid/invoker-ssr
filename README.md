@@ -2,7 +2,7 @@
 
 An opiniated starter for next.js project
 
-****- [Invoker Next](#invoker-next)
+### Table of Contents
   - [Overview](#overview)
   - [Getting Stated](#getting-stated)
   - [What's Included](#whats-included)
