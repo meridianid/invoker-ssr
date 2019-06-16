@@ -1,12 +1,19 @@
 const path = require('path')
+
+const nextEnv = require('next-env');
+const dotenvLoad = require('dotenv-load');
+
 const compose = require('next-compose')
 const withSass = require('@zeit/next-sass')
 const withCSS = require('@zeit/next-css')
 const withFonts = require('next-fonts')
 const withReactSvg = require('next-react-svg')
 const withImages = require('next-images')
-
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
+
+dotenvLoad();
+
+const withNextEnv = nextEnv();
 
 const nextConfig = ({
   webpack: (config) => {
@@ -34,6 +41,7 @@ const nextConfig = ({
 })
 
 module.exports = compose([
+  [withNextEnv, {}],
   [withFonts, {
     enableSvg: true,
   }],
