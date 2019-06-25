@@ -40,22 +40,26 @@ const nextConfig = ({
   }
 })
 
-module.exports = compose([
-  [withNextEnv, {}],
-  [withFonts, {
-    enableSvg: true,
-  }],
-  [withCSS, {}],
-  [withSass, {
-    cssModules: true,
-    cssLoaderOptions: {
-      importLoaders: 1,
-      localIdentName: "[local]___[hash:base64:5]",
-    }
-  }],
-  [withImages, {}],
-  [withReactSvg, {
-    include: path.resolve(__dirname, 'src/assets/svg')
-  }],
-  nextConfig
-])
+module.exports = ({
+  // For deployment with https://now.sh
+  // target: 'serverless'
+  ...compose([
+    [withNextEnv, {}],
+    [withFonts, {
+      enableSvg: true,
+    }],
+    [withCSS, {}],
+    [withSass, {
+      cssModules: true,
+      cssLoaderOptions: {
+        importLoaders: 1,
+        localIdentName: "[local]___[hash:base64:5]",
+      }
+    }],
+    [withImages, {}],
+    [withReactSvg, {
+      include: path.resolve(__dirname, 'src/assets/svg')
+    }],
+    nextConfig
+  ])
+})

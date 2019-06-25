@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "invoker-next",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    },
+    {
+      "src": "server/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+
+  ]
+}
