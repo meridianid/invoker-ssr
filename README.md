@@ -20,15 +20,13 @@ Before you can start tinkering with your project, you need to have these install
 
 1. Node.js
 2. A package manager like `npm` (you already have it if you have Node.js installed on your machinge), or you can use `yarn`
-3. `mid-tinker-cli`, a recommended way to scaffold your project. To install it, run `npm install -g mid-tinker-cli` on your terminal
+3. `mid-tinker-cli`, work best to scaffold your project with this starter. To install it, run `npm install -g mid-tinker-cli` on your terminal
 
 If you already have all those three on your machine, you can scaffold your project by running this command on your terminal
 
 ```shell
 tinker next your-project-name
 ```
-
----
 
 ## What's Included
 
